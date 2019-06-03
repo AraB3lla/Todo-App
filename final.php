@@ -59,7 +59,7 @@ if(isset($_POST['todoEntry'])){
 
 echo "<ul style='list-style: none;'>";
        foreach ($_SESSION['listItems'] as $items){
-       echo "<li id='task'>" .$items. "</li>";}
+       echo "<div class='B'>"."<li id='task'>" .$items. "<br>"."</div>";}
         "</ul>"
 
 ?>
@@ -95,8 +95,8 @@ $(document).ready(function(){
           $(this).css("text-decoration", "line-through");
         }
       });
+      
 });
-
 
 </script>
 </div>
